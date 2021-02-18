@@ -1,10 +1,9 @@
 <?php
 
-namespace Tests\Unit;
+namespace Tests\Feature;
 
+use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;
-use Illuminate\Foundation\Testing\DatabaseMigrations;
-use Illuminate\Foundation\Testing\DatabaseTransactions;
 
 use App\Sponsor;
 use App\Team;

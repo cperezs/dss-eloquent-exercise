@@ -7,7 +7,7 @@ After downloading the project execute
 composer install
 cp .env.example .env
 php artisan key:generate
-php artisan migrate:install
+php artisan migrate:refresh
 ```
 
 If you have dependency errors when initializing the project, execute this command
@@ -17,7 +17,7 @@ composer update
 
 ## Writing your code
 
-Your models must be in the `App` namespace. The unit tests in this project will try to load them in the following way:
+Your models must be in the `App` namespace. The feature tests in this project will try to load them in the following way:
 ```php
 use App\Player;
 use App\Team;
